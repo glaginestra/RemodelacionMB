@@ -1,0 +1,527 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245,245,245);
+}
+
+h1{font-size: 2.9em;}
+h2{font-size: 2.5em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1.3em;}
+p{font-size: 1.1em;color: rgb(59, 58, 58);}
+
+h1,h2,h3,h4{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+button{
+    font-size: 1.4em;
+    padding: 10px 20px;
+    background-color: rgb(245,245,245);
+    box-shadow: 1px 1px 40px rgb(0,0,0,0.5);
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+
+    
+}
+
+.container{
+    max-width: 1260px;
+    margin: auto;
+
+    
+}
+
+header h4{
+    margin-bottom: -2px;
+    width: 200px;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+header nav{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: rgb(245,245,245);
+    display: flex;
+}
+
+.abrir-menu{
+    border-radius: 40px;
+    border: 0px;
+    font-size: 30px;
+    display: flex;
+    box-shadow: none;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222;
+    padding-top: 60px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.visible {
+    transform: translateX(0);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Botón de abrir y cerrar */
+
+
+#cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: none;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    box-shadow: none;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+nav.visible #cerrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.carta h3{
+    color: rgb(218, 142, 67);
+}
+
+.cliente h3{
+    color: rgb(218, 142, 67);
+}
+
+#remodelaciones{
+    background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url(Imagenes/casa.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 90vh;
+    max-width: 1260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+#remodelaciones h1{
+    color: rgb(245,245,245);
+    text-align: center;
+    margin: 10px 20px;
+}
+
+#remodelaciones button{
+    display:flex;
+    align-self: center;
+    transition: color 0.5s ease;
+    margin-top: 40px;
+    border: 0px;
+}
+
+#remodelaciones button:hover{
+    color: rgb(218, 142, 67);
+}
+
+
+.lideres-contenido{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+
+}
+
+#lideres button{
+    background-color: rgb(38, 37, 37);
+    color: rgb(245,245,245);
+    transition: background-color 0.5s ease;
+    border:rgb(218, 142, 67);
+    padding: 10px 20px;
+    align-self: center;
+}
+
+#lideres button:hover{
+    background-color: rgb(218, 142, 67);
+}
+
+
+#elegirnos{
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+#elegirnos .carta{
+    margin-top: 60px;
+}
+
+.carta p{
+    display: none;
+}
+
+
+
+#nuestros-servicios button{
+    background-color: rgb(38, 37, 37);
+    color: rgb(245,245,245);
+    transition: background-color 0.5s ease;
+    border:rgb(218, 142, 67);
+}
+
+#nuestros-servicios button:hover{
+    background-color: rgb(218, 142, 67);
+}
+
+
+#nuestros-servicios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#nuestros-servicios h2{
+    margin-bottom: 10px;
+}
+
+#nuestros-servicios button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 100px;
+}
+
+.cocina{
+    background-image:
+    linear-gradient(0deg,rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(Imagenes/cocina.avif);
+    background-position: center center;
+    height: 25vh;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(245,245,245);
+    border-radius: 12px;
+}
+
+.banio{
+    background-image:
+    linear-gradient(0deg,rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(Imagenes/baño.avif);
+    background-position: left center;
+    height: 25vh;
+    margin: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(245,245,245);
+    border-radius: 12px;
+}
+
+.interiores{
+    background-image:
+    linear-gradient(0deg,rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(Imagenes/interiores.avif);
+    background-position: center bottom;
+    height: 25vh;
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(245,245,245);
+    border-radius: 12px;
+}
+
+#platicanos{
+    background-color: rgb(38, 37, 37);
+    color:rgb(245,245,245);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#platicanos h2{
+    color: rgb(245,245,245);
+}
+
+#platicanos a{
+    text-decoration: none;
+    color:rgb(245,245,245,0.7);
+}
+
+#platicanos p{
+    color:rgb(245,245,245,0.7);
+}
+
+.formulario{
+    display: none;
+}
+
+/* 
+.formulario{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.formulario input{
+    background-color: rgb(38, 37, 37);
+    border: 0px;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    height: 40px;
+    caret-color: rgb(245,245,245);
+}
+
+
+.enviar{
+    transition: color 0.5s ease;
+}
+
+.enviar:hover{
+    color: rgb(218, 142, 67);
+} */
+
+.boton-formulario{
+    margin: 20px;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+
+.boton-formulario:hover{
+    color: rgb(218, 142, 67);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a{
+    color: rgb(38, 37, 37);
+}
+
+
+@media (min-width:720px) {
+    header{
+        top: 0;
+        width: 100%;
+        position: fixed;
+    }
+
+    #remodelaciones{
+        height: 110vh;
+        align-items: flex-start;
+
+    }
+
+    #remodelaciones h1{
+        font-size: 5.5em;
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    #remodelaciones button{
+        align-self: flex-start;
+        margin-left:60px;
+
+    }
+    
+    #lideres{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+
+    #lideres .imagen{
+        background-image:url(Imagenes/cocina2.webp);
+        background-attachment: fixed;
+        height: 90vh;
+        background-position: center center;
+        background-repeat:no-repeat ;
+        width: 1400px;
+        display: flex;
+        background-size: 100% auto;
+    }
+     
+    .lideres-contenido{
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .lideres-contenido p{
+        font-size: 1.2em;
+    }
+
+    .lideres-contenido h2{
+        font-size: 3.5em;
+    }
+    #lideres button{
+        padding: 10px 20px;
+        align-self: self-start;
+    } 
+    
+    .cartas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    .carta p{
+        display: block;
+        font-size: 1.3em;
+    }
+    #elegirnos h2{
+        font-size: 3.5em;
+    }
+
+    .carta h3{
+        font-size: 1.7em;
+        margin-bottom: 30px;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .servicio {
+        width: 450px;
+    }
+
+    .banio{
+        height: 90vh;
+    }
+
+    .cocina{
+        height: 90vh;
+        
+    }
+
+    .interiores{
+        height: 90vh;
+        
+    }
+
+    #nuestros-servicios h2{
+        font-size: 3.5em;
+        
+    }
+
+
+
+    #platicanos{
+        height: 70vh;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario{
+        display: none;
+    }
+
+    .boton-formulario{
+        display: block;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    footer p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+
+}
+
