@@ -273,7 +273,7 @@ nav.visible #cerrar {
 
 .banio{
     background-image:
-    linear-gradient(0deg,rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(Imagenes/baño.avif);
+    linear-gradient(0deg,rgb(0,0,0,0.4),rgb(0,0,0,0.4)),url(Imagenes/banio.avif);
     background-position: left center;
     height: 25vh;
     margin: 35px 30px;
